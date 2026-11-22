@@ -4,7 +4,7 @@ from orderlab.pricing import subtotal
 
 
 def test_subtotal_normal():
-    assert subtotal(10_000, 2) == 20_001
+    assert subtotal(10_000, 2) == 20_000
 
 
 def test_subtotal_zero():
