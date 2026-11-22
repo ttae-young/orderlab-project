@@ -1,1 +1,40 @@
-# orderlab-project
+# OrderLab
+
+Python CI/CD practice project using Ruff, pytest, FastAPI, and GitHub Actions.
+
+## Features
+
+- Subtotal calculation
+- Discount and shipping calculation
+- CSV revenue reporting
+- FastAPI order creation and retrieval
+
+## Development
+
+Install dependencies:
+
+```bash
+python -m pip install -r requirements-dev.txt
+```
+
+Run lint and format checks:
+
+```bash
+ruff check .
+ruff format --check .
+```
+
+Run tests:
+
+```bash
+python -m pytest -q
+```
+
+## CI
+
+GitHub Actions automatically checks:
+
+- Ruff lint and formatting
+- pytest on Ubuntu
+- pytest on Windows
+- Test coverage artifact
