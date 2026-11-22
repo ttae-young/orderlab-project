@@ -38,3 +38,12 @@ GitHub Actions automatically checks:
 - pytest on Ubuntu
 - pytest on Windows
 - Test coverage artifact
+ 
+## CI/CD Verification
+
+- Ruff lint and format checks passed.
+- pytest tests passed on Ubuntu and Windows.
+- Pull requests run CI without deployment.
+- GitHub Pages deployment runs after successful CI on main.
+- An intentional test failure blocked deployment.
+- The failing test was restored after verification.
