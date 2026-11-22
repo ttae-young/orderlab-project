@@ -19,9 +19,7 @@ def test_create_and_get(client):
 
 
 def test_invalid_quantity(client):
-    response = client.post(
-        "/orders", json={"price": 100, "quantity": 0}
-    )
+    response = client.post("/orders", json={"price": 100, "quantity": 0})
     assert response.status_code == 422
 
 
